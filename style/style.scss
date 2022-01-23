@@ -1,0 +1,112 @@
+@font-face {
+    font-family: fmFontStencil;
+    src: url(../misc/ForsvarsmaktenSans-Stencil.woff2);
+  } 
+@font-face {
+    font-family: fmFont;
+    src: url(../misc/ForsvarsmaktenSans-Regular.woff2);
+} 
+@font-face {
+    font-family: fmFontBold;
+    src: url(../misc/ForsvarsmaktenSans-Bold.woff2);
+}
+@font-face {
+    font-family: fmFontCondensed;
+    src: url(../misc/ForsvarsmaktenSans-Condensed.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: fmFont;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 4rem;
+            background-color: rgba(19, 22, 22, 0.75);
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                list-style: none;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    list-style: none;
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1rem;
+                        font-family: fmFont;
+                    }
+
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: rgb(0, 255, 0);
+                        a {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        div {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div {
+                background-color: rgba(19, 22, 22, 0.75);
+                color: white;
+                padding: 1rem;
+                h1 {
+                    display: flex;
+                    font-family: fmFontStencil;
+                    font-size: 2.5rem;
+                    padding: 0.75rem;
+                }
+                h2 {
+                    font-family: fmFontCondensed;
+                }
+            }
+        }
+    }
+}
